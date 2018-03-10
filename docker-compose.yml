@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+    postgres:
+        image: postgres:9.6-alpine
+        ports:
+            - "5432:5432"
+        volumes:
+            - ~/postgres/data:/var/lib/postgresql/data
+        environment:
+            POSTGRES_USER: foobar
+            POSTGRES_PASSWORD: thereisnosecure
+

@@ -1,0 +1,22 @@
+[[source]]
+
+verify_ssl = true
+name = "pypi"
+url = "https://pypi.python.org/simple"
+
+
+[requires]
+
+python_version = "3.5"
+
+
+[packages]
+
+pytest = "*"
+factory-boy = "*"
+sqlalchemy = "*"
+"psycopg2" = "*"
+
+
+[dev-packages]
+
