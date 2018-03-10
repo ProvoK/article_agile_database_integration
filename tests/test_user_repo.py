@@ -38,19 +38,6 @@ def session(connection):
 def repo(session):
     return UserRepository(session)
 
-def my_func_to_delete_users(session, user_id):
-    session.query(UserModel).filter(UserModel.id == user_id).delete()
-
-
-def test_case(session):
-    user = UserFactory.create()
-    assert session.query(UserModel).one()
-
-    my_func_to_delete_users(session, user.id)
-
-    result = session.query(UserModel).one_or_none()
-    assert result is None
-
 
 def test_authentication_success(repo):
     password = 'user plain password'
