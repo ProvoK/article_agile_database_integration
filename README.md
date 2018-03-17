@@ -2,7 +2,7 @@
 
 This repo is a simple example for an easy database integration testing with pytest, factoryboy and sqlalchemy.
 
-Read the full article here TBD
+Read the full article [here](https://medium.com/@vittorio.camisa/agile-database-integration-tests-with-python-sqlalchemy-and-factory-boy-6824e8fe33a1)
 
 
 ## Setup
